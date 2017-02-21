@@ -1,6 +1,5 @@
 #CLTA
-This is a project that tries to align cross-lingual taxonomies on the Web, such as product catalogues and Web site directories. 
-Here, we publish all the source code.
+This is the project that pulishes the source code of category correlation based bilingual topic models: CC-BiLDA and CC-BiBTM, which can be applied to cross-lingual applications, such as cross-lingual taoxnomy alignment.
 
 ###Requirements:
 
