@@ -68,7 +68,8 @@ usage: Model Run Options
  -savestep <arg>      Step to Save
  -source_beta <arg>   Source Beta
  -t <arg>             Data Type
- -target_beta <arg>   Target Beta```<br/>
+ -target_beta <arg>   Target Beta
+ ```
 
 
 then you can following the help option to run this project on your own datasets. for example, you can run:<br/>
