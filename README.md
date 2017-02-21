@@ -41,9 +41,11 @@ for CC-BiBTM method, the Biterm Documents and the Biterm-Category Distribution f
 ```corpus/A/exact matching/CC-BiBTM/Biterms(for BiBTM)_A```<br/>
 ```corpus/A/exact matching/CC-BiBTM/Biterms(for BiBTM)_A.(<avg_pi> or <hier_pi>)```<br/>
 
+###Compile Project:
 To run this project, you need to first compile this project using maven:<br/>
 ```mvn assembly:assembly```<br/>
 
+#Run Project:
 Then the jar package of this project will be generated in the target directory named by 'alignment-1.0-SNAPSHOT.jar'<br/>
 
 if you are first time to using this project, run:<br/>
@@ -68,5 +70,7 @@ usage: Model Run Options
  -t <arg>             Data Type
  -target_beta <arg>   Target Beta```<br/>
 
+
 then you can following the help option to run this project on your own datasets. for example, you can run:<br/>
 ```java -jar target/alignment-1.0-SNAPSHOT.jar -m CCBiBTM -f "Biterms(for BiBTM)" -t "product catalogue" -iter 300 -savestep 100 -minus "_minus(0.333)" -k 100```<br/>
+if options not refered, values will be put default.
