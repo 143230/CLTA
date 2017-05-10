@@ -72,5 +72,5 @@ usage: Model Run Options
 
 
 then you can following the help option to run this project on your own datasets. for example, you can run:<br/>
-```java -jar target/alignment-1.0-SNAPSHOT.jar -m CCBiBTM -f "Biterms(for BiBTM)" -t "product catalogue" -iter 300 -savestep 100 -minus "0.333" -k 100```<br/>
+```java -jar target/alignment-1.0-SNAPSHOT.jar -m CCBiBTM -f "Biterms(for BiBTM)" -t "product catalogue" -iter 300 -savestep 100 -minus 0.333 -k 100```<br/>
 if options not refered, values will be put default.
