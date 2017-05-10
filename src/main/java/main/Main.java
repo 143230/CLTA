@@ -21,7 +21,6 @@ public class Main {
         opts.addOption("iter", true, "Iteration Number");
         opts.addOption("savestep", true, "Step to Save");
         opts.addOption("m", true, "Method for training the corpus, one of <CCBiBTM, CCBiLDA>");
-        opts.addOption("minus", true, "Corpus Minus");
         opts.addOption("f", true, "File Name");
         opts.addOption("t", true, "Data Type");
         opts.addOption("avg", false, "Using Average Category Distribution to inference the GibbsSampling.");
@@ -84,12 +83,7 @@ public class Main {
         if(cli.hasOption("hier")){
             defalut_distype = ".hier_pi";
         }
-        if(cli.hasOption("minus")){
-            String minus = cli.getOptionValue("minus");
-            CCBiBTMGibbsSampling.Run(fileName, dataType, "_minus("+minus+")", defalut_distype);
-        }else{
-            CCBiBTMGibbsSampling.Run(fileName, dataType, defalut_distype);
-        }
+        CCBiBTMGibbsSampling.Run(fileName, dataType, defalut_distype);
     }
 
     private static void runCCBiLDA(CommandLine cli) throws Exception {

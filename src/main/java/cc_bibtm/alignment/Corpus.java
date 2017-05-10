@@ -52,10 +52,10 @@ public class Corpus
 	}
 	
 	//dataSetType:"web site directory" or "product catalogue"
-	public void readDocs(String fileName, String dataSetType, String isMinus, String disType) throws Exception
+	public void readDocs(String fileName, String dataSetType, String disType) throws Exception
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("corpus/" + dataSetType + "/exact matching/CC-BiBTM/"
-				+ fileName+"_"+dataSetType + isMinus), "utf-8"));
+				+ fileName+"_"+dataSetType), "utf-8"));
 		String theLine = "";
 		int line_readed = 0;
 		while((theLine = br.readLine()) != null)
@@ -233,7 +233,7 @@ public class Corpus
 		}
 		LogPrinter.println("Finished Readed "+line_readed+" lines Category.");
 		br = new BufferedReader(new InputStreamReader(new FileInputStream("corpus/" + dataSetType + "/exact matching/CC-BiBTM/"
-				+ fileName+"_"+dataSetType + disType + isMinus), "utf-8"));
+				+ fileName+"_"+dataSetType + disType), "utf-8"));
 		LogPrinter.println("Start Reading Category Distribution for "+dataSetType);
 		line_readed =0;
 		while((theLine = br.readLine())!=null){
