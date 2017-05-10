@@ -86,7 +86,7 @@ public class Main {
         }
         if(cli.hasOption("minus")){
             String minus = cli.getOptionValue("minus");
-            CCBiBTMGibbsSampling.Run(fileName, dataType, minus, defalut_distype);
+            CCBiBTMGibbsSampling.Run(fileName, dataType, "_minus("+minus+")", defalut_distype);
         }else{
             CCBiBTMGibbsSampling.Run(fileName, dataType, defalut_distype);
         }
